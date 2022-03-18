@@ -81,12 +81,12 @@ static const struct arg args[] = {
 //	{ temp, "%s°C  ", "\x04%s°C\x01  ", "/sys/class/hwmon/hwmon0/temp3_input", 1, 60 },
 	//{ cpu_perc, "  %s", NULL, NULL, 1, 30 },
 	//{ cpu_freq, "  %s  ", NULL, NULL, 1, 0 },
-	{ ram_used, " %s  ", NULL, NULL, 1, 0},
+	{ ram_used, "                                                                                                                                                %s  ", NULL, NULL, 1, 0},
 //	{ keymap, " %s |,", NULL, NULL, 1, 0 },
-	{ ping, "直  ", "?", "ya.ru", 1, 60 },
+//	{ ping, "直  ", "?", "ya.ru", 1, 60 },
 	{ datetime, "%s", NULL, " %a, %b %d ", 60, 0 },
 	//{ datetime, "%s", NULL, "%H:%M   ", 1, 0 }
-	{ datetime, "%s", NULL, "| %I:%M %p            ", 1, 0 }
+	{ datetime, "%s", NULL, "| %I:%M %p           ", 1, 0 }
   	//{ datetime, "%s", "^c#e7cb93^|%a, %b %d|"},
   //{ datetime, "%s", "^c#c68a75^|🕟 %I:%M %p|   "},
 };

@@ -1,4 +1,4 @@
-exec feh --bg-scale --randomize ~/Desktop/Wallpapers/randoms/* &
+exec feh --recursive --bg-scale --randomize ~/wallpapers/randoms/* &
 exec slstatus &
-exec picom &
+exec picom --config ~/.config/picom/picom.conf --experimental-backends &
 exec ~/.config/dwm/dwm

@@ -39,7 +39,7 @@ static const char urg_border[] = "#1C3A5F";
 
 static const char col_cyan[]            = "#a3be8c";
 static const unsigned int baralpha     = 90;
-static const unsigned int borderalpha  = OPAQUE;
+static const unsigned int borderalpha  = 90;
 static const char *colors[][3]          = {
  	/*               fg         bg         border   */
 	[SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, 
@@ -49,8 +49,8 @@ static const char *colors[][3]          = {
 
 static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
-  [SchemeNorm] = { OPAQUE, baralpha, borderalpha },
-	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
+  [SchemeNorm] = { baralpha, baralpha, borderalpha },
+	[SchemeSel]  = { baralpha, baralpha, borderalpha },
 };
 
 /* tagging */
@@ -63,7 +63,7 @@ static const Rule rules[] = {
 	 */
 	/* class           instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
 	{ "Gimp",     NULL,       NULL,       1<<6,            1,           -1 },
-	{ "Firefox",  NULL,        NULL,       1<<1,       0,           -1 },
+	{ "Firefox",  NULL,        "Browser",       1<<1,       0,           -1 },
 };
 
 /* layout(s) */
