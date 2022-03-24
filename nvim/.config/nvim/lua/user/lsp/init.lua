@@ -5,4 +5,21 @@ end
 
 require "user.lsp.lsp-installer"
 require("user.lsp.handlers").setup()
+require'lspconfig'.gopls.setup{
+                  cmd = {'gopls','--remote=auto'},
+                capabilties = {
+                        textDocuemnt = {
+                                completion = {
+                                        completionItem = {
+                                                snippetSupport = true
+                                        }
+                                }
+                        }
+                },
+                init_options = {
+                        usePlaceholders = true,
+                        completeUnimported = true
+                }
+
+}
 require "user.lsp.null-ls"

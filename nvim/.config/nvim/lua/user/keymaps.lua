@@ -10,6 +10,7 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
@@ -19,6 +20,8 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Normal --
+--clear vim-go bindings
+
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
