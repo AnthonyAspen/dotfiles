@@ -70,6 +70,7 @@ return packer.startup(function(use)
   use "joshdick/onedark.vim"
   use "sainnhe/everforest"
   use "catppuccin/nvim"
+  use "sonph/onehalf"
   --nvim-transparant
   use "xiyaowong/nvim-transparent"
 

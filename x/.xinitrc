@@ -1,4 +1,4 @@
-exec feh --bg-scale --randomize ~/Desktop/Wallpapers/randoms/* &
+nitrogen --restore &
 exec slstatus &
 exec picom &
 exec ~/.config/dwm/dwm

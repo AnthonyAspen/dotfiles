@@ -219,6 +219,11 @@ _G.packer_plugins = {
     path = "/home/squeezesky/.local/share/nvim/site/pack/packer/start/onedark.vim",
     url = "https://github.com/joshdick/onedark.vim"
   },
+  onehalf = {
+    loaded = true,
+    path = "/home/squeezesky/.local/share/nvim/site/pack/packer/start/onehalf",
+    url = "https://github.com/sonph/onehalf"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/squeezesky/.local/share/nvim/site/pack/packer/start/packer.nvim",
