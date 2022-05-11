@@ -13,9 +13,9 @@ local diagnostics = {
 	sources = { "nvim_diagnostic" },
 	sections = { "error", "warn" },
 	symbols = { error = " ", warn = " " },
-	colored = false,
+	colored = true,
 	update_in_insert = false,
-	always_visible = true,
+	always_visible = false,
 }
 
 local diff = {
@@ -28,7 +28,7 @@ local diff = {
 local mode = {
 	"mode",
 	fmt = function(str)
-		return "-- " .. str .. " --"
+		return "  " .. str .. "  "
 	end,
 }
 
@@ -49,15 +49,15 @@ local location = {
 	padding = 0,
 }
 
--- cool function for progress
-local progress = function()
-	local current_line = vim.fn.line(".")
-	local total_lines = vim.fn.line("$")
---	local chars = { "__", "▁▁", "▂▂", "▃▃", "▄▄", "▅▅", "▆▆", "▇▇", "██" }
-	local line_ratio = current_line / total_lines
-	local index = math.ceil(line_ratio * #chars)
-	return chars[index]
-end
+-- -- cool function for progress
+-- local progress = function()
+-- 	local current_line = vim.fn.line(".")
+-- 	local total_lines = vim.fn.line("$")
+-- --	local chars = { "__", "▁▁", "▂▂", "▃▃", "▄▄", "▅▅", "▆▆", "▇▇", "██" }
+-- 	local line_ratio = current_line / total_lines
+-- 	local index = math.ceil(line_ratio * #chars)
+-- 	return chars[index]
+-- end
 
 lualine.setup({
 	options = {
@@ -75,7 +75,7 @@ lualine.setup({
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { diff, "encoding", filetype },
 		lualine_y = { location },
-		lualine_z = { progress },
+		lualine_z = {},
 	},
 	inactive_sections = {
 		lualine_a = {},
