@@ -11,7 +11,7 @@ transparent.setup ({
     "BufferlineBufferSelected",
     "BufferLineTabClose",
     "BufferLineFill",
-    "BufferLineBackground",
+    -- "BufferLineBackground",
     "BufferLineSeparator",
     "BufferLineIndicatorSelected",
   },
