@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/home/squeezesky/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  neon = {
+    loaded = true,
+    path = "/home/squeezesky/.local/share/nvim/site/pack/packer/start/neon",
+    url = "https://github.com/rafamadriz/neon"
+  },
   ["nlsp-settings.nvim"] = {
     loaded = true,
     path = "/home/squeezesky/.local/share/nvim/site/pack/packer/start/nlsp-settings.nvim",
@@ -263,11 +268,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/squeezesky/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
-  },
-  ["vim-be-good"] = {
-    loaded = true,
-    path = "/home/squeezesky/.local/share/nvim/site/pack/packer/start/vim-be-good",
-    url = "https://github.com/ThePrimeagen/vim-be-good"
   },
   ["vim-css-color"] = {
     loaded = true,
