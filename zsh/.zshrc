@@ -83,7 +83,7 @@ xset r rate 500 40
 
 # Environment variables set everywhere
 export EDITOR="nvim"
-export TERMINAL="st"
+export TERMINAL="xterm-256color"
 export BROWSER="firefox"
 
 # For QT Themes

@@ -1,9 +1,17 @@
 local plugins = {
   {
+
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
         "gopls",
+        "clangd",
+        "clang-format",
+        "codelldb",
       },
     },
   },
@@ -34,6 +42,13 @@ local plugins = {
     ft = "go",
     opts = function()
       return require "custom.configs.null-ls"
+    end,
+  },
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    event = "VeryLazy",
+    opts = function()
+      --return require "custom.configs.null-ls"
     end,
   },
   {
